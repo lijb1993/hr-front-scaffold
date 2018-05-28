@@ -60,6 +60,9 @@
         <el-menu-item index="progress">
           <i class="el-icon-share"></i>进度条
         </el-menu-item>
+        <el-menu-item index="demo">
+          <i class="el-icon-share"></i>Demo
+        </el-menu-item>
       </el-menu>
     </div>
   </aside>

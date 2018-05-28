@@ -90,6 +90,11 @@ export default new Router({
           path: 'progress',
           name: 'progress组件',
           component: () => import('@/views/progress')
+        },
+        {
+          path: 'demo',
+          name: 'demo',
+          component: () => import('@/views/Demo/demo')
         }
       ]
     },

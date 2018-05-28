@@ -31,11 +31,11 @@ export default {
     return {
       add: {
         data: {
-          name: '',
+          name: "",
           age: 1,
           sex: 1,
-          birth: '2017-06-14',
-          addr: ''
+          birth: "2017-06-14",
+          addr: ""
         }
       }
     };
@@ -45,14 +45,16 @@ export default {
       this.$refs[r].resetFields();
     },
     addUser() {
-      this.axios.get('http://localhost:3000/user/add', { params: this.add.data }).then((res) => {
-        if (res.data.code == 200) {
-          this.$message.success(res.data.msg)
-        }
-      })
+      this.axios
+        .get("http://localhost:3000/user/add", { params: this.add.data })
+        .then(res => {
+          if (res.data.code == 200) {
+            this.$message.success(res.data.msg);
+          }
+        });
     }
   }
-}
+};
 </script>
 <style lang="css" scoped>
 .container {

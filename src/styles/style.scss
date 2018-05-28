@@ -103,6 +103,9 @@ header::after {
 
 .table {
   margin-top: 30px;
+  & td {
+    text-align: left
+  }
 }
 
 .help p {
